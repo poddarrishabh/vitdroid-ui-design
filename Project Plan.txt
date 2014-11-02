@@ -1,0 +1,47 @@
+Name: VIT Students’ app
+
+As the 1st to 2nd years are focused  mainly on attendance, this should be focused more on the attendance means every feature  like notifications,alerts etc..
+Attendance,bunks and all shud be provided in  a very user friendly and nice way with minimum hustle.
+Next is pacement and internships news and we will take care of that
+Goal: A completely pro full-featured app that would take care of many aspects of a VIT’s students’ life including attendance, academic calendar, class alerts, exam schedule, etc.
+Data into the app
+1.	Academic Calendar:  The data of academic calendar (all the holidays and exam schedules) will be hard-coded in the app and will require a new version every semester (we will come up with some alternative later)---fetching from server is preferable
+
+2.	Individual Student’s attendance: In first use, the app will collect the student’s roll number, date of birth and captcha code. The app will login to the student’s parent login, and get data of the courses registered, the slots, attendance on individual days and attendance percentage for each course. (This is done in previously existing attendance apps – if we encounter any trouble, we will just reverse-engineer them and have a look)-----------the attendance has to be updated continuously,so it will require logging again and again into the student profile
+
+
+3.	Individual Student’s timetable: The app will be hardcoded with information that translates course slots into the days of the week and timings their classes will be on.---it will take the data from the server for the individual students once they login in and store locally in database
+Facilities to the students
+1.	What’s today’s timetable: Students see the day’s timetable when the app is started. No need to be zooming into a photo every other day.
+2.	Minimum number of classes to attend: In the front screen time table along with courses’ name, slot, timings, attendance percentage, we will also mention minimum number of classes to attend / number of remaining classes for the course before the next upcoming exam.-----
+Notification that u have missed this many classes and need so much to cope up
+Alert before that slot that I can bunk this class or not
+How many classes we can bunk
+3.	Silent mode during class timings: Phone will go on silent mode during the class timings and come back to the default settings afterwards----very nice feature
+4.	Below 75% alert: The user will receive alert whenever his attendance percentage in any class goes below 75%.
+5.	Reminder to go to class: Students’ will get reminders to attend classes 10 minutes in advance for classes that are not immediately after another class.
+
+
+6.	Know current attendance state without internet connection and/or even if the faculty has not updated the attendance: Students will be able to mark themselves as absent for any class of the day by a single touch near the name of the subject in their timetable in the front screen. No action implies present by default.
+
+7.	Be aware of mistakes done by faculties: 
+If you had not marked yourself as absent for a class, but upon syncing it was found that your faculty has marked you as absent, an alert message with all required details will be displayed.
+8.	Academic calendar: Only one touch in the front screen, a calendar of the current month will be shown with “Holidays”, “Cat I”, “Cat II” etc… written over the days in a bit transparent/translucent writing. Arrow marks will lead to previous and next months. This can be hardcoded into the app.---
+It should  fetch from server so that any change,and it can show the new results.Also its released after a delay, so external server is good.
+
+
+
+
+9.	Exam Schedule: With knowledge of the exam days and slots registered by the user, the app will auto-generate the exam schedule. -----once exam schedule are out,it can also be fetched from the server for the individual students.alerts can be given for the exams the previous day
+10.save your quiz schedule in the app and it will notify  you one day before.
+11.we will try to scan the site and see if any new link or circulars pop up and give alerts to students
+12 marks viewing and calculation of internals(out of 50).
+13 marks update notification
+14.cabin no and phone of the faculties
+15.placement news..will be fetched from the email  address subscribed  for it.only 4 3rd and 4th years.
+Actually the placement news we get are from a fixed email id..so we can scan and give any email that comes.
+16 if a student want to converse across its slot members about the quiz or some info,he can chat across his friends.
+
+Notification at the end of the day: At the end of the day, after all classes are done with, a notification will appear reminding to mark classes you didn’t attend.
+
+SETTINGS: We will allow users to turn-off a few features such as reminders, silent mode, below 75% attendance etc... Few features such as “Exam Schedule” cannot be opted out of.
